@@ -1,2 +1,2 @@
-# bookish-engine
-Heuristics for order acceptance and scheduling problem
+# Heuristics for order acceptance and scheduling problem
+
