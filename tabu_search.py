@@ -7,7 +7,7 @@ from utils import symmetrical_difference_positions, element_exist_in_list
 random.seed(25)
 
 
-class tabuclass():
+class Tabu:
     def __init__(self, num_orders, tabu_tenure, termination_for_not_improving, path_relinking_frequency,
                  path_relinking_requirement):
         self.all_solution = []
@@ -361,7 +361,7 @@ if __name__ == '__main__':
     r = 9  # increases complexity of the problem
     instance = 7
 
-    tabu_obj = tabuclass(num_orders=order_count, tabu_tenure=150, termination_for_not_improving=2000,
+    tabu_obj = Tabu(num_orders=order_count, tabu_tenure=150, termination_for_not_improving=2000,
                          path_relinking_frequency=50, path_relinking_requirement=500)  # num orders are
 
     tabu_obj.job_desc_dict = data_importer(order_number=order_count, tao_number=tao, r_number=r,
